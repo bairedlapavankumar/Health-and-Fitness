@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav__header">
+              <div class="nav__logo">
+                <a href="#"><img src="assets/logo2.png" alt="logo" />Fitness</a>
+              </div>
+              <div class="nav__menu__btn" id="menu-btn">
+                <span><i class="ri-menu-line"></i></span>
+              </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+              <li class="link"><a href="index.html">Home</a></li>
+              <li class="link"><a href="index.html">About</a></li>
+              <li class="link"><a href="exercise.html">Exercises</a></li>
+              <li class="link"><a href="trainers.html">Trainers</a></li>
+              <li class="link"><a href="premium.html">Premium</a></li>
+ 
+              <li  class="dropdown" >
+                <button class="dropdown-button">
+                <span>ContactUs</span>
+                <!-- <i class="bi bi-chevron-down"></i> -->
+                </button>
+                <div class="dropdown-menu">
+                  <button><a href="mailto:chittireddynikhithreddy@gmail.com">Email <i class="fa-regular fa-envelope"></i></a></button>
+                  <button><a href="">999xxxxxx <i class="fa-solid fa-phone"></i></a></button>
+                </div>
+              </li>
+              
+            </ul>
+          </nav>
+      </header>
+      
+
+      <section class="section__container price__container" id="price">
+        <h2 class="section__header">Our Plans</h2>
+        <p class="section__description">
+          Our pricing plan comes with various membership tiers, each tailored to
+          cater to different preferences and fitness aspirations.
+        </p>
+        <div class="price__grid">
+          <div class="price__card">
+            <div class="price__content">
+              <h4>Deit Planning & Trainers monitoring</h4>
+              <img style="height: 100px; width:300px ;" src="assets/diet.jpeg" alt="price" />
+              <img src="assets/trainer.webp" alt="price" />
+              <p>
+                Just 99 Rs/-  Only 
+              </p>
+              <hr />
+              <h4>Key Features</h4>
+              <p>Smart workout Deit plan</p>
+              <p>At home workouts</p>
+              <p>Trainer Suggestions</p>
+              <p>Smart workout plan</p>
+            </div>
+           
+          </div>
+          <div class="price__card">
+            <div class="price__content">
+              <h4></h4>
+              <div class="payment-section">
+                <h2>Payment Details</h2>
+                <form id="payment-form">
+                    <!-- Card Payment Option -->
+                    <div class="payment-option">
+                        <img src="assets/cards.png" alt="price" />
+                        <input type="radio" id="card" name="payment-method" value="card" checked>
+                        <label for="card">Credit/Debit Card</label>
+                    </div>
+            
+                    <div class="card-payment">
+                        <div class="input-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="input-group">
+                            <label for="expiration-date">Expiration Date</label>
+                            <input type="text" id="expiration-date" placeholder="MM/YY">
+                        </div>
+                        <div class="input-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123">
+                        </div>
+                    </div>
+            
+                    <!-- UPI Payment Option -->
+                    <div class="payment-option">
+                        <img src="assets/upi.png" alt="price" />
+                        <input type="radio" id="upi" name="payment-method" value="upi">
+                        <label for="upi">UPI</label>
+                        
+                    </div>
+            
+                    <div class="upi-payment">
+                        <div class="input-group">
+                            <label for="upi-id">UPI ID</label>
+                            <input type="text" id="upi-id" placeholder="yourname@bank">
+                        </div>
+                    </div>
+            
+                    <input class="btn" type="submit" value="Proceed to Payment">
+                </form>
+            </div>
+            <script>
+              document.getElementById("payment-form").addEventListener("submit", function(event) {
+                  event.preventDefault(); // Prevents actual form submission
+                  alert("Payment Done!");
+                  window.location.href = "premiumuser.html"; // Redirects to premiumuser.html
+              });
+          </script>
+          
+        </div>
+      </section>
+           
+              
+<center> <h4>Our Resources grow you more Mentally and physical <i class="fa-solid fa-face-smile"></i></h4> </center>
+</body>
+</html>
